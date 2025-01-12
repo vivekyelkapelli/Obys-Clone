@@ -10,6 +10,16 @@ html,body{
     height: 100%;
     width: 100%;
 }
+#crsr{
+    height: 2.5vw;
+    width: 2.5vw;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 9999;
+    mix-blend-mode: difference;
+    transform: translate(-50%,-50%);
+}
 #loader{
     height: 100%;
     width: 100%;
@@ -87,14 +97,6 @@ html,body{
     }
 }
 
-
-
-
-
-
-
-
-
 #main{
     /* width: 100%; */
     background-color: #0c0c0c;
@@ -103,5 +105,37 @@ html,body{
 #page1{
     height: 100vh;
     width: 100%;
-    background-color: rgb(31, 30, 30);
+    background-color: #151515;
+}
+
+#nav{
+    padding: 6vh 4.9vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+#nav-part2 h3{
+    font-size: 2vh;
+    font-weight:500;
+}
+.hero  {
+    width: 70%;
+    margin-left: 27%;
+    height: fit-content;
+    overflow: hidden;
+}
+.hero:nth-child(2){
+    margin-top: 18vh;
+
+}
+.hero h1{
+    font-size: 7.5vw;
+    text-transform: uppercase;
+    line-height: 7.5vw;
 }
