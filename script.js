@@ -48,12 +48,14 @@ tl.from("#nav",{
     ease:Power4,
     opacity:0
 })
-tl.from(".hero h1",{
+tl.from(".hero h1,.hero h2",{
     y:150,
     stagger:0.1
 })
 
-}
+
+};
+
 function cursorAnimation(){
     document.addEventListener("mousemove",function(dets){
         gsap.to("#crsr",{
